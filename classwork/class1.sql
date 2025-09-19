@@ -8,10 +8,22 @@ CREATE TABLE student_details (
 
 
 INSERT INTO student_details (id, name, age, department, grade)
- VALUES ('1','Alfred','23','cse','80'), 
- ('2','Kiran','19','eee','90'), 
- ('3','Chong','34','civil','57'), 
- ('4','Suresh','17','ece','69');
+ VALUES ('1','Alfred','23','computer science','80'), 
+ ('2','Kiran','19','physics','90'), 
+ ('3','Chong','34','biology','57'), 
+ ('4','Suresh','17','maths','69');
 
 
  SELECT * FROM student_details WHERE age > 20;
+
+SELECT *
+FROM student_details
+WHERE department IN ('computer science', 'physics');
+
+
+ SELECT * FROM student_details WHERE grade = 90;
+
+ SELECT *
+FROM student_details
+WHERE grade BETWEEN 70 AND 90;
+
