@@ -1,14 +1,14 @@
 CREATE TABLE students (
     student_id INT PRIMARY KEY,
-    name TEXT (100),
-    email TEXT (100), 
+    name VARCHAR(100),
+    email VARCHAR (100), 
     UNIQUE (email,student_id)
 );
 
 
 CREATE TABLE courses (
     course_id INT PRIMARY KEY,
-    course_name TEXT (100),
+    course_name VARCHAR (100),
     UNIQUE (course_id)
 );
 
